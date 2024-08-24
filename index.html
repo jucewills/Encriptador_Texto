@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <!-- Encabezado de la página -->
+    <header class="header">
+      <div class="header__container">
+          <img src="img/logo.png" class="header__logo" alt="Logo">
+          <h1 class="header__titulo">Encriptador de texto</h1>
+      </div>
+  </header>  
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Sección para encriptar el texto -->
+        <section class="encriptar">
+            <textarea id="texto" placeholder="Escribe el texto aquí" name="texto" class="texto" cols="30" rows="10"></textarea>
+            
+            <div class="terminos">
+                <p>ⓘ Solo letras minúsculas y sin acentos.</p>
+            </div>
+            
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
+            </div>
+        </section>
+
+        <!-- Sección para mostrar el resultado encriptado -->
+        <section class="encriptado">
+            <img src="img/muñeco.png" alt="Imagen de referencia" id="muñeco">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">No has ingresado ningún texto</h2>
+                <p id="parrafo">Ingresa el texto que deseas encriptar</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>© 2024 Encriptador de Texto Desarrollado por Julio César Wilches para Alura. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+</body>
+
+</html>
